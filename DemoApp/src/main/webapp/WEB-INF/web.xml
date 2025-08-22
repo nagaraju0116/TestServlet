@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  
+  
+  <!-- commented servelt tag for use annotation instead   -->
+  
+  <servlet>
+  <servlet-name>abc</servlet-name>
+  <servlet-class>com.letgo.AddServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>abc</servlet-name>
+  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>sqr</servlet-name>
+  <servlet-class>com.letgo.SquareServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>sqr</servlet-name>
+  <url-pattern>/sq</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!-- 
+  PrintWriter
+  request dispatcher
+  sendRedirect
+  URL rewriting
+  HTTP session
+  cookies 
+  ServletConfig & SerletContext  eg: Servel
+  Servlet Annotation configuration
+  jsp along with servlet  eg:home ,New
+  scriptlet,expression,Directive,declaration
+  Directive types -page, include(ex:New,home,header), taglib
+  Implicit Object in JSP  eg:home.jsp
+  Exception Handling in JSP  eg:exception.jsp,error.jsp
+  JDBC in JSP ex:JDBC-JSP project connect with mysql and added lib of mysql-connector-j
+  MVC using servlet ex: model(pojo)-view(jsp)-controller(servlet) and N-tier( service-DAO-DB) -== pojo=plain old java object  , DAO=data access object
+  JSTL  part -1 EL (JSTL=jsp standard tag library)
+  JSTL  part -2 core tags added lib (jakarta and jstl) and lib from tomcat lib jsp and sql by build path
+  JSTL  SQL Tags 
+  JSTL  Function Tags
+  Servlet Filter
+  Login Using Servlet & JSP
+  How to Prevent Back Button after Logout
+  -->
+  <!-- issues solve -->
+  <!-- if get or post methods are not works while put on server -> go to project ->clean -> clean projects  (button) -->
+  <!-- if server gets error delete and add server again and add lib files of  jakarta.servlet.jsp.jstl and jakarta.servlet.jsp.jstl.api  - jars  -->
+ <!-- in maven project error for jsp file as "The superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path"  jar install as javax.servlet-api and ctrl+shift+F in that file then issue solved  -->
+  <!--  The servlets named [GetGroupController] and [com.mvns.web.GetGroupController] are both mapped to the url-pattern [/getDetails] which is not permitted if this error comes in console remove servlet mapping in web.xml because @webservlet there-->
+</web-app>
