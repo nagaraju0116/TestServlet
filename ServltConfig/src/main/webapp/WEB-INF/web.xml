@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>ServltConfig</display-name>
+  
+  <!-- <context-param>
+	  <param-name>globalVaraible</param-name>
+	  <param-value>Welcome to Global</param-value>
+  </context-param> -->
+  <!-- servletConfig -->
+   <servlet>
+	  <servlet-name>userValidation</servlet-name>
+	  <servlet-class>com.letgosw.Servel</servlet-class>
+	  
+		  <!-- <init-param>
+		  <param-name>topic</param-name>
+		  <param-value>Difference between config and context</param-value>
+		  </init-param> -->
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>userValidation</servlet-name>
+  <url-pattern>/validation</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  <param-name>name</param-name>
+  <param-value>steve</param-value>
+  </context-param>
+  
+  <!-- servletContext -->
+  <servlet>
+  <servlet-name>loginSuccess</servlet-name>
+  <servlet-class>com.letgosw.UserDashBoard</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>loginSuccess</servlet-name>
+  <url-pattern>/WelcomePage</url-pattern>
+  </servlet-mapping>
+
+  
+  
+</web-app>
