@@ -55,4 +55,29 @@
   <!-- if server gets error delete and add server again and add lib files of  jakarta.servlet.jsp.jstl and jakarta.servlet.jsp.jstl.api  - jars  -->
  <!-- in maven project error for jsp file as "The superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path"  jar install as javax.servlet-api and ctrl+shift+F in that file then issue solved  -->
   <!--  The servlets named [GetGroupController] and [com.mvns.web.GetGroupController] are both mapped to the url-pattern [/getDetails] which is not permitted if this error comes in console remove servlet mapping in web.xml because @webservlet there-->
+<!-- SELECT * FROM nagdb.login;
+uname    pass
+	steveb	1234
+	tom	9876
+	tom	junior
+
+ -->
+ <!-- SELECT * FROM nagdb.newtable;
+ id name  tech
+ 1	stain	.net
+2	lee	c++
+3	john	java
+4	steve	python
+5	camin	c
+6	dane	MLearing
+7	maria	big data
+ 
+  -->
+  <!-- SELECT * FROM nagdb.student;
+  ID    name    marks
+  101	steve	88
+102	hari	99
+103	reins	77
+   -->
+  
 </web-app>
